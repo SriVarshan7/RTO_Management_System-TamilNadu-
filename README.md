@@ -46,4 +46,31 @@ Refer to the `dbms_p1.sql` file for the SQL database schema.
 2. Clone the repository:
    ```bash
    git clone <repository-url>
+3. Move the cloned project folder to XAMPP's `htdocs` directory:
+   ```bash
+   mv <project-folder> /xampp/htdocs/
+   
+### **Running the Project Locally**
+
+1. Open **XAMPP Control Panel** and start the **Apache** and **MySQL** services.
+2. Open your web browser and go to `http://localhost/phpmyadmin`.
+3. Create a new database (e.g., `rto_management`).
+4. Import the database schema:
+   - Go to the **Import** tab in phpMyAdmin.
+   - Choose the `dbms_p1.sql` file and import it to set up tables and initial data.
+5. Access the project by opening a browser and going to `http://localhost/<project-folder-name>`.
+
+### **Deployment**
+
+For deploying the system to production, platforms like **Netlify** are recommended for hosting the frontend, and **PHP-compatible hosting** is needed for the backend.
+
+### **Future Enhancements**
+
+Potential future improvements include:
+
+- **Integration with Aadhaar Authentication API**
+- **Development of a mobile app version**
+- **Online payment support** for application fees
+- **AI-driven query and complaint resolution** with chatbots
+
 
